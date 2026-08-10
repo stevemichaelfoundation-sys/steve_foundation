@@ -10,7 +10,7 @@ const NAV_ITEMS = [
   { label: "Guidelines", href: "/guidilines" }, 
   { label: "Where we work", href: "/where-we-work" },
   { label: "Policies", href: "/policies" },
-  { label: "Focus Area", href: "/focus-area"},
+  { label: "What we do", href: "/what-we-do"},
   { label: "Our Strategy", href: "/our-strategy" }, 
   { label: "Support", href: "/support" },
 ];

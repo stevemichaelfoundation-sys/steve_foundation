@@ -1,0 +1,444 @@
+.wwd-page-canvas {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 5rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: border-box;
+}
+
+/* --- Hero Introductions --- */
+.wwd-hero-masthead {
+  max-width: 1140px;
+  margin: 0 auto 4rem auto;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.wwd-eyebrow-accent {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #dfba6b;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.wwd-main-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #1e223c;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.wwd-subheading-intro {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  max-width: 800px;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* --- Containers Panels --- */
+.wwd-content-container {
+  max-width: 1140px;
+  margin: 0 auto 5rem auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.wwd-section-label-heading {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1e223c;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #dfba6b;
+  padding-bottom: 0.85rem;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+}
+
+/* --- Pillar Grid Elements --- */
+.wwd-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.wwd-pillar-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 15px rgba(30, 34, 60, 0.03);
+}
+
+.wwd-card-top-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.wwd-card-icon {
+  font-size: 2.5rem;
+}
+
+.wwd-card-index {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.wwd-pillar-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1e223c;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.wwd-pillar-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+.p-purple { border-top: 4px solid #3b1f5c; }
+.p-green { border-top: 4px solid #3f9b6c; }
+.p-pink { border-top: 4px solid #e8628a; }
+.p-navy { border-top: 4px solid #5b3a82; }
+
+/* --- Approach Statement Banner --- */
+.wwd-approach-banner {
+  background-color: #1e223c;
+  color: #ffffff;
+  padding: 5rem 2rem;
+  margin-bottom: 5rem;
+}
+
+.wwd-approach-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.wwd-approach-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #dfba6b;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.wwd-approach-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.wwd-approach-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 900px;
+  margin: 0;
+}
+
+/* --- Split Action Form Interface Grid --- */
+.wwd-split-layout-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.wwd-details-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.wwd-support-block h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e223c;
+  margin: 0 0 1.25rem 0;
+}
+
+.wwd-support-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wwd-support-block li {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #4a5568;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.wwd-support-block li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #dfba6b;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.wwd-eligibility-checklist {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.wwd-eligibility-checklist h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e223c;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.wwd-bold-scholarship-btn {
+  background-color: #1e223c;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1.5rem;
+}
+
+/* --- Dynamic Side Form --- */
+.wwd-form-pane {
+  position: sticky;
+  top: 160px;
+}
+
+.wwd-sticky-form-card {
+  background-color: #fdfbff;
+  border: 1px solid #e2d8f5;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 15px 40px rgba(109, 40, 217, 0.04);
+}
+
+.wwd-sticky-form-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e223c;
+  margin: 0 0 0.5rem 0;
+}
+
+.wwd-form-helper-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #6b6280;
+  margin: 0 0 2rem 0;
+}
+
+.wwd-unified-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.wwd-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wwd-form-field label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1e223c;
+  letter-spacing: 0.05em;
+}
+
+.wwd-form-select,
+.wwd-form-input,
+.wwd-form-textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.wwd-form-select:focus,
+.wwd-form-input:focus,
+.wwd-form-textarea:focus {
+  border-color: #0d9488;
+}
+
+.wwd-form-submit-btn {
+  background-color: #0d9488;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* --- Featured Operational Field Manual Layout --- */
+.wwd-resource-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.wwd-resource-meta-side {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wwd-resource-badge-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: #dfba6b;
+  color: #1e223c;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.wwd-resource-title {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #1e223c;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.wwd-resource-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0 0 1.5rem 0;
+}
+
+.wwd-resource-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.wwd-resource-features li {
+  font-size: 0.95rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.wwd-resource-action-btn {
+  background-color: #1e223c;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Hardcover book aesthetic block wrapper */
+.wwd-resource-book-mock {
+  background: linear-gradient(135deg, #1e223c 0%, #0f111e 100%);
+  color: #ffffff;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 8px solid #dfba6b; /* Gold binding trace edge */
+}
+
+.wwd-book-pages-lbl {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #dfba6b;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.wwd-resource-book-mock h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.2;
+}
+
+.wwd-resource-book-mock p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+/* --- Footer Area Navigation --- */
+.wwd-footer-nav {
+  max-width: 1140px;
+  margin: 4rem auto 0 auto;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.btn-secondary-wwd {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1e223c;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --- Responsive Layout Parameters --- */
+@media (max-width: 920px) {
+  .wwd-split-layout-grid,
+  .wwd-resource-card {
+    grid-template-columns: 1fr;
+  }
+  .wwd-form-pane {
+    position: static;
+  }
+  .wwd-main-heading {
+    font-size: 2.5rem;
+  }
+}
