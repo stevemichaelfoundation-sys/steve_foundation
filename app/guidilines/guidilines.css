@@ -1,10 +1,11 @@
 .immigrationLayoutContainer {
-  max-width: 1300px; 
+  max-width: 1200px; 
   margin: 0 auto;
-  padding: 80px 24px 120px; 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 40px 24px 120px; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: #2d3748; 
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 
@@ -16,18 +17,18 @@
 
 .headerMainTitle {
   font-size: clamp(34px, 5.5vw, 48px); 
-  font-weight: 800;
-  color: #111827; 
+  font-weight: 700;
+  color: #1e223c; 
   letter-spacing: -0.02em;
-  margin-bottom: 24px;
-  line-height: 1.2;
+  margin: 0 0 24px 0;
+  line-height: 1.15;
 }
 
 .headerBriefSummary {
-  font-size: 1.35rem; 
+  font-size: 1.2rem; 
   line-height: 1.65;
   color: #4a5568;
-  max-width: 960px;
+  max-width: 900px;
   margin: 0;
 }
 
@@ -35,48 +36,32 @@
   margin-bottom: 80px;
 }
 
-.flowSectionSubTitle {
-  font-size: 2.25rem; 
-  font-weight: 800;
-  color: #111827;
-  margin-bottom: 60px;
-  letter-spacing: -0.01em;
-}
-
 .zigzagListStack {
   display: flex;
   flex-direction: column;
-  gap: 72px; 
+  gap: 5rem; 
 }
 
 .zigzagStepRow {
   display: flex;
   align-items: center;
-  gap: 64px; 
-  padding: 32px 0;
+  gap: 4rem; 
+  padding: 24px 0;
 }
+
 .zigzagStepRow.reverseRowLayout {
   flex-direction: row-reverse;
 }
 
-@media (max-width: 920px) {
-  .zigzagStepRow,
-  .zigzagStepRow.reverseRowLayout {
-    flex-direction: column-reverse; 
-    gap: 36px;
-    align-items: flex-start;
-  }
-}
-
 .stepDetailsTextPane {
-  flex: 1.1; 
+  flex: 1.2; 
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .numberBadgeIndicator {
-  font-size: 1.05rem; 
+  font-size: 0.85rem; 
   font-weight: 700;
   color: #0d9488; 
   background-color: #f0fdfa; 
@@ -89,14 +74,15 @@
 }
 
 .stepTitleHeading {
-  font-size: 1.75rem; 
-  font-weight: 800;
-  color: #111827;
+  font-size: 1.85rem; 
+  font-weight: 700;
+  color: #1e223c;
   margin: 0;
+  letter-spacing: -0.01em;
 }
 
 .stepNarrativeParagraph {
-  font-size: 1.2rem; 
+  font-size: 1.1rem; 
   line-height: 1.65;
   color: #4a5568;
   margin: 0;
@@ -104,7 +90,7 @@
 
 
 .stepVisualContainerCard {
-  flex: 0.9;
+  flex: 0.8;
   width: 100%;
 }
 
@@ -113,29 +99,28 @@
   height: 260px; 
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   border: 1px solid #e2e8f0;
-  border-radius: 20px; 
+  border-radius: 16px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 10px 25px -5px rgba(30, 34, 60, 0.03);
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
 }
 
 .visualGraphicBackgroundBox:hover {
   transform: translateY(-2px); 
-  box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 35px rgba(30, 34, 60, 0.08);
 }
 
 .graphicCentralSymbol {
-  font-size: 76px; 
+  font-size: 72px; 
   user-select: none;
 }
-
 
 .medicalUrgencyFooterNotice {
   background-color: #fff1f2;
   border-left: 5px solid #f43f5e;
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 12px 12px 0;
   padding: 32px; 
   display: flex;
   gap: 20px;
@@ -150,7 +135,41 @@
 
 .urgencyNoticeBodyText {
   margin: 0;
-  font-size: 1.1rem; 
+  font-size: 1.05rem; 
   line-height: 1.6;
   color: #9f1239; 
+}
+
+.btn-secondary-guidelines {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1e223c;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.2s ease;
+}
+
+.btn-secondary-guidelines:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 920px) {
+  .zigzagStepRow,
+  .zigzagStepRow.reverseRowLayout {
+    flex-direction: column-reverse; 
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .visualGraphicBackgroundBox {
+    height: 200px;
+  }
+  .headerMainTitle {
+    font-size: 2.5rem;
+  }
 }

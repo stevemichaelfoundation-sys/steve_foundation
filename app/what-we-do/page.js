@@ -25,8 +25,7 @@ export default function WhatWeDoPage() {
 
   return (
     <div className="wwd-page-canvas">
-      
-      {/* --- Section 1: Main Page Introduction Hero --- */}
+
       <section className="wwd-hero-masthead">
         <span className="wwd-eyebrow-accent">WHAT WE DO</span>
         <h1 className="wwd-main-heading">Four Interconnected Pillars</h1>
@@ -35,7 +34,6 @@ export default function WhatWeDoPage() {
         </p>
       </section>
 
-      {/* --- Section 2: Core Four Pillars Operational Grid Layout --- */}
       <section className="wwd-content-container">
         <div className="wwd-pillars-grid">
           <div className="wwd-pillar-card p-purple">
@@ -76,7 +74,6 @@ export default function WhatWeDoPage() {
         </div>
       </section>
 
-      {/* --- Section 3: Strategic Approach and Impact Statement --- */}
       <section className="wwd-approach-banner">
         <div className="wwd-approach-wrapper">
           <span className="wwd-approach-eyebrow">OUR APPROACH</span>
@@ -87,7 +84,6 @@ export default function WhatWeDoPage() {
         </div>
       </section>
 
-      {/* --- Section 4: Split System: Support Systems and Unified Session Form --- */}
       <section className="wwd-content-container">
         <div className="wwd-split-layout-grid">
           
@@ -130,6 +126,7 @@ export default function WhatWeDoPage() {
               </div>
             </div>
           </div>
+
           <div className="wwd-form-pane">
             <div className="wwd-sticky-form-card">
               <h3>Dynamic Session Booking</h3>
@@ -201,9 +198,8 @@ export default function WhatWeDoPage() {
           </div>
 
         </div>
-         </section>
-
-           {/* --- Section 5: Field Resources Resource Highlight Panel --- */}
+      </section>
+      {/* --- Section 5: Field Resources Resource Highlight Panel --- */}
       <section className="wwd-content-container">
         <h2 className="wwd-section-label-heading">Featured Operational Resource</h2>
         
@@ -233,11 +229,10 @@ export default function WhatWeDoPage() {
             <span className="wwd-book-pages-lbl">26 PAGES • PDF</span>
             <h4>ASRHR Training Manual</h4>
             <p>Adolescent Sexual and Reproductive Health and Rights — a facilitator's guide built for limited time, limited materials, and communities that deserve accurate, compassionate information.</p>
-          </div> {/* ✅ Added missing closing div for book mock */}
-        </div> {/* ✅ Added missing closing div for resource card */}
+          </div>
+        </div>
       </section>
 
-      {/* --- Section 6: Return Navigation Footer Action --- */}
       <div className="wwd-footer-nav">
         <Link href="/" className="btn-secondary-wwd">
           ← Return to Main Management Board
