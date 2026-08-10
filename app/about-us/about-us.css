@@ -1,0 +1,228 @@
+.aboutPageWrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 24px 120px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2d3748;
+}
+
+.aboutHeroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #edf2f7;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .aboutHeroGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.eyebrowLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #718096;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.mainHeroTitle {
+  font-size: clamp(30px, 4.5vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a202c;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.highlightText {
+  color: #0d9488;
+}
+
+.fontItalic {
+  font-style: italic;
+}
+
+.heroDescriptionText {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #4a5568;
+  margin: 0 0 24px 0;
+}
+
+.visionCallout {
+  padding: 16px 20px;
+  background-color: #f7fafc;
+  border-left: 4px solid #0d9488;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.pillarsSection, .approachSection, .teamSection {
+  padding: 80px 0 0;
+}
+
+.sectionMainHeader {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.01em;
+}
+
+.sectionSubtitle {
+  font-size: 15px;
+  color: #718096;
+  margin-bottom: 36px;
+}
+
+.pillarsResponsiveGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .pillarsResponsiveGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pillarCard {
+  border-radius: 16px;
+  padding: 36px;
+  border: 1px solid #edf2f7;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.cardTealBg { 
+  background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%); 
+}
+
+/* Fixed invalid background-opacity statement by integrating opacity directly into an rgba fallback mix */
+.cardAmberBg { 
+  background: linear-gradient(180deg, rgba(254, 243, 199, 0.4) 0%, #ffffff 100%); 
+}
+
+.cardCoralBg { 
+  background: linear-gradient(180deg, #fef2f2 0%, #ffffff 100%); 
+}
+
+.cardGreenBg { 
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%); 
+}
+
+.indicatorBar {
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.barTeal { background-color: #0d9488; }
+.barAmber { background-color: #d97706; }
+.barCoral { background-color: #dc2626; }
+.barGreen { background-color: #16a34a; }
+
+.pillarCard h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 12px 0;
+}
+
+.pillarCard p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+.approachContainer {
+  background-color: #f8fafc;
+  padding: 48px;
+  border-radius: 16px;
+  border: 1px dashed #e2e8f0;
+}
+
+.approachBodyText {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #334155;
+  margin: 16px 0 0 0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .teamGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .teamGrid { grid-template-columns: 1fr; }
+}
+
+.teamCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagePlaceholderBox {
+  width: 100%;
+  height: 200px;
+  background-color: #edf2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarSymbol {
+  font-size: 48px;
+  opacity: 0.3;
+}
+
+.teamInfoDetails {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.memberName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 4px 0;
+}
+
+.memberTitlePosition {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0d9488;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.memberShortDescription {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #718096;
+  margin: 0;
+}

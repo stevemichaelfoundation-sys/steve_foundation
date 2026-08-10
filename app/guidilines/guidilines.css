@@ -1,0 +1,156 @@
+.immigrationLayoutContainer {
+  max-width: 1300px; 
+  margin: 0 auto;
+  padding: 80px 24px 120px; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2d3748; 
+  background-color: #ffffff;
+}
+
+
+.infoMainHeaderSection {
+  border-bottom: 2px dashed #edf2f7;
+  padding-bottom: 48px; 
+  margin-bottom: 64px;
+}
+
+.headerMainTitle {
+  font-size: clamp(34px, 5.5vw, 48px); 
+  font-weight: 800;
+  color: #111827; 
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.headerBriefSummary {
+  font-size: 1.35rem; 
+  line-height: 1.65;
+  color: #4a5568;
+  max-width: 960px;
+  margin: 0;
+}
+
+.zigzagFlowContainer {
+  margin-bottom: 80px;
+}
+
+.flowSectionSubTitle {
+  font-size: 2.25rem; 
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 60px;
+  letter-spacing: -0.01em;
+}
+
+.zigzagListStack {
+  display: flex;
+  flex-direction: column;
+  gap: 72px; 
+}
+
+.zigzagStepRow {
+  display: flex;
+  align-items: center;
+  gap: 64px; 
+  padding: 32px 0;
+}
+.zigzagStepRow.reverseRowLayout {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 920px) {
+  .zigzagStepRow,
+  .zigzagStepRow.reverseRowLayout {
+    flex-direction: column-reverse; 
+    gap: 36px;
+    align-items: flex-start;
+  }
+}
+
+.stepDetailsTextPane {
+  flex: 1.1; 
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.numberBadgeIndicator {
+  font-size: 1.05rem; 
+  font-weight: 700;
+  color: #0d9488; 
+  background-color: #f0fdfa; 
+  padding: 6px 16px;
+  border-radius: 24px;
+  display: inline-block;
+  width: max-content;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.stepTitleHeading {
+  font-size: 1.75rem; 
+  font-weight: 800;
+  color: #111827;
+  margin: 0;
+}
+
+.stepNarrativeParagraph {
+  font-size: 1.2rem; 
+  line-height: 1.65;
+  color: #4a5568;
+  margin: 0;
+}
+
+
+.stepVisualContainerCard {
+  flex: 0.9;
+  width: 100%;
+}
+
+.visualGraphicBackgroundBox {
+  width: 100%;
+  height: 260px; 
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+}
+
+.visualGraphicBackgroundBox:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+.graphicCentralSymbol {
+  font-size: 76px; 
+  user-select: none;
+}
+
+
+.medicalUrgencyFooterNotice {
+  background-color: #fff1f2;
+  border-left: 5px solid #f43f5e;
+  border-radius: 0 16px 16px 0;
+  padding: 32px; 
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.alertIconAnchor {
+  font-size: 32px; 
+  line-height: 1;
+}
+
+.urgencyNoticeBodyText {
+  margin: 0;
+  font-size: 1.1rem; 
+  line-height: 1.6;
+  color: #9f1239; 
+}
