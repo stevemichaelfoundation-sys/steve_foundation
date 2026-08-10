@@ -8,12 +8,13 @@ export const metadata = {
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about-us" },
-  { label: "Guidelines", href: "/guidilines" }, 
-  { label: "Where we work", href: "/where-we-work" },
-  { label: "Policies", href: "/policies" },
-  { label: "What we do", href: "/what-we-do"},
-  { label: "Our Strategy", href: "/our-strategy" },
+    { label: "What we do", href: "/what-we-do"},
+ { label: "Where we work", href: "/where-we-work" },
+ { label: "Our Strategy", href: "/our-strategy" },
   { label: "Support", href: "/support" },
+  { label: "Policies", href: "/policies" },
+    { label: "Guidelines", href: "/guidilines" }, 
+
 ];
 
 export default function RootLayout({ children }) {

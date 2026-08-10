@@ -7,12 +7,13 @@ import { usePathname } from "next/navigation";
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about-us" },
-  { label: "Guidelines", href: "/guidilines" }, 
-  { label: "Where we work", href: "/where-we-work" },
+    { label: "What we do", href: "/what-we-do"},
+      { label: "Where we work", href: "/where-we-work" },
+      { label: "Our Strategy", href: "/our-strategy" }, 
+       { label: "Support", href: "/support" },
   { label: "Policies", href: "/policies" },
-  { label: "What we do", href: "/what-we-do"},
-  { label: "Our Strategy", href: "/our-strategy" }, 
-  { label: "Support", href: "/support" },
+    { label: "Guidelines", href: "/guidilines" }, 
+
 ];
 
 export default function Navbar() {
