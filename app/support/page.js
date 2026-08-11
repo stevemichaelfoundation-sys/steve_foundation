@@ -85,7 +85,7 @@ export default function SupportPage() {
           
           <div className="narrative-paragraphs-stack">
             <p className="narrative-paragraph-node">
-              The Steve Foundation is committed to dismantling systemic barriers in adolescent sexual and reproductive health rights (ASRHR). By bridging the gap between clinical healthcare delivery and modern digital systems, we empower young people with anonymous, validated knowledge exactly when they need it most.
+          The Steve Foundation is committed to dismantling systemic barriers in adolescent sexual and reproductive health rights (ASRHR). By bridging the gap between clinical healthcare delivery and modern digital systems, we empower young people with anonymous, validated knowledge exactly when they need it most.
             </p>
             <p className="narrative-paragraph-node">
               Our ongoing initiatives build foundational infrastructure across four critical execution pillars: youth-focused education, maternal and infant health support ecosystems, optimized decentralized product distribution, and parent-gatekeeper communal dialogue spaces. We firmly believe that literacy precedes product safety and long-term economic independence.

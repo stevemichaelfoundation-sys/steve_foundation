@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import "./contactus.css";
+import "./contactus.css"; 
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -24,24 +24,33 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("Sending...");
 
+    // Client-side guard check for active connection layers
+    if (!navigator.onLine) {
+      setStatus("No internet connection detected. Please connect and try again.");
+      return;
+    }
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formspree.io", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Accept": "application/json",
+          "Content-Type": "application/json" 
+        },
         body: JSON.stringify(formData),
       });
-
-      const data = await response.json();
 
       if (response.ok) {
         setStatus("Message sent successfully! Check your inbox.");
         setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
       } else {
-        setStatus(`Failed: ${data.error || "Unknown error"}`);
+        const data = await response.json();
+        setStatus(`Failed: ${data.errors ? data.errors.map(err => err.message).join(', ') : "Submission error"}`);
       }
     } catch (error) {
       console.error("Form submit error:", error);
-      setStatus("Error sending message. Please try again.");
+      // Soft safety net failure message layer instead of crashing the browser thread screen
+      setStatus("Network connection blocked. Please check your internet and try again.");
     }
   };
 
@@ -200,35 +209,9 @@ export default function ContactPage() {
               </Link>
             </div>
           </div>
+
         </div>
       </div>
-
-      {/* --- ADDED NARRATIVE PARAGRAPHS SECTION --- */}
-      <section className="foundation-narrative-section">
-        <div className="narrative-content-wrapper">
-          <span className="narrative-eyebrow">ABOUT THE FOUNDATION</span>
-          <h3 className="narrative-main-heading">Empowering Communities Through Data and Localized Healthcare</h3>
-          
-          <div className="narrative-paragraphs-stack">
-            <p className="narrative-paragraph-node">
-              The Steve Foundation is committed to dismantling systemic barriers in adolescent sexual and reproductive health rights (ASRHR). By bridging the gap between clinical healthcare delivery and modern digital systems, we empower young people with anonymous, validated knowledge exactly when they need it most.
-            </p>
-            <p className="narrative-paragraph-node">
-              Our ongoing initiatives build foundational infrastructure across four critical execution pillars: youth-focused education, maternal and infant health support ecosystems, optimized decentralized product distribution, and parent-gatekeeper communal dialogue spaces. We firmly believe that literacy precedes product safety and long-term economic independence.
-            </p>
-            <p className="narrative-paragraph-node">
-              Your structural contributions go directly toward deploying discrete health resource containers, engineering scalable offline mobile systems, and securing local community alliances. Together, we build a reliable protective shield around the vulnerable generations of tomorrow.
-            </p>
-          </div>
-
-          <div className="narrative-footer-nav">
-            <Link href="/" className="btn-return-home">
-              ← Back to Overview
-            </Link>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }

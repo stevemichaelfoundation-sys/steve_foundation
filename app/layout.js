@@ -13,7 +13,6 @@ const NAV_ITEMS = [
  { label: "Our Strategy", href: "/our-strategy" },
   { label: "Support", href: "/support" },
   { label: "Policies", href: "/policies" },
-    { label: "Guidelines", href: "/guidilines" }, 
 
 ];
 
