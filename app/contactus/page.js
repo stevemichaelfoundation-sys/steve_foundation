@@ -24,14 +24,14 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("Sending...");
 
-    // Client-side guard check for active connection layers
     if (!navigator.onLine) {
       setStatus("No internet connection detected. Please connect and try again.");
       return;
     }
 
     try {
-      const response = await fetch("https://formspree.io", {
+      // Direct integration linking cleanly to your verified form identifier endpoint
+      const response = await fetch("https://formspree.io/f/xoeadjpa", {
         method: "POST",
         headers: { 
           "Accept": "application/json",
@@ -49,7 +49,6 @@ export default function ContactPage() {
       }
     } catch (error) {
       console.error("Form submit error:", error);
-      // Soft safety net failure message layer instead of crashing the browser thread screen
       setStatus("Network connection blocked. Please check your internet and try again.");
     }
   };
