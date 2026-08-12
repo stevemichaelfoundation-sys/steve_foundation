@@ -30,7 +30,7 @@ export default function ContactPage() {
     }
 
     try {
-      // Direct integration linking cleanly to your verified form identifier endpoint
+
       const response = await fetch("https://formspree.io/f/xoeadjpa", {
         method: "POST",
         headers: { 
@@ -178,7 +178,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <span className="infoLabel">Phone Number</span>
-                <span className="infoValue">+250 782270658</span>
+                {/* <span className="infoValue">+250 782270658</span> */}
               </div>
             </li>
 
@@ -191,7 +191,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <span className="infoLabel">Email Support</span>
-                <span className="infoValue">steve.michaelfoundation@gmail.com</span>
+                {/* <span className="infoValue">steve.michaelfoundation@gmail.com</span> */}
               </div>
             </li>
           </ul>
@@ -199,7 +199,7 @@ export default function ContactPage() {
           <div className="social">
             <span className="followLabel">Follow Us:</span>
             <div className="socialIcons">
-              <Link href="https://linkedin.com" className="socialIcon" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/steve-foundation/" className="socialIcon" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                   <rect width="4" height="12" x="2" y="9" />

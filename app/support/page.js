@@ -47,7 +47,7 @@ export default function SupportPage() {
             </button>
           </div>
 
-          <div className="amount-input-wrapper">
+                    <div className="amount-input-wrapper">
             <span className="currency-prefix-symbol">$</span>
             <input 
               type="number" 
@@ -66,9 +66,20 @@ export default function SupportPage() {
             ▼ SUPPORT INITIATIVE
           </button>
 
-          <a href="tel:+1234567890" className="action-link-phone-call">
+          {/* ✅ FIXED CONTACT LINK: Seamlessly redirects users to your /contactus layout page without error */}
+          <Link 
+            href="/contactus" 
+            className="action-link-phone-call"
+            style={{ 
+              display: "flex", 
+              alignItems: "center", 
+              justifyContent: "center", 
+              gap: "8px", 
+              textDecoration: "none" 
+            }}
+          >
             📞 CALL US
-          </a>
+          </Link>
 
           <div className="secure-badge-footer">
             <span className="secure-uppercase-label">SECURE PROCESSING GATEWAY</span>
