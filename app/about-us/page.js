@@ -121,7 +121,7 @@ export default function AboutPage() {
                     <span className="avatarSymbol">{member.imgPlaceholder}</span>
                   </div>
                   <div className="teamInfoDetails">
-                    <h3 className="memberName">{member.name || "Name TBD"}</h3>
+                    <h3 className="memberName">{member.name || ""}</h3>
                     <span className="memberTitlePosition">{member.position}</span>
                     {member.description && (
                       <p className="memberShortDescription">{member.description}</p>
@@ -144,7 +144,7 @@ export default function AboutPage() {
                     <span className="avatarSymbol">{member.imgPlaceholder}</span>
                   </div>
                   <div className="teamInfoDetails">
-                    <h3 className="memberName">{member.name || "Name TBD"}</h3>
+                    <h3 className="memberName">{member.name || ""}</h3>
                     <span className="memberTitlePosition">{member.position}</span>
                     <p className="memberShortDescription">{member.description}</p>
                   </div>
