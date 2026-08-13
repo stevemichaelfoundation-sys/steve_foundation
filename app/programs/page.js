@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import "./what-we-do.css"; 
+import "./programs"; 
 
 export default function WhatWeDoPage() {
   const [formData, setFormData] = useState({
