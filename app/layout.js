@@ -106,11 +106,11 @@ export default function RootLayout({ children }) {
               </div>
 
 
-              <div className="branch-footer-col" style={{ flex: "1", minWidth: "220px" }}>
+              {/* <div className="branch-footer-col" style={{ flex: "1", minWidth: "220px" }}>
                 <h4 style={{ color: "#ffffff", marginBottom: "16px", fontSize: "16px", fontWeight: "700" }}>Contact</h4>
                 <p style={{ fontSize: "14px", color: "#94a3b8", marginBottom: "8px", wordBreak: "break-all" }}>steve.michaelfoundation@gmail.com</p>
                 <p style={{ fontSize: "14px", color: "#94a3b8", margin: 0 }}>+250 782270658</p>
-              </div>
+              </div> */}
 
             </div>
             <div className="branch-footer-bottom" style={{ 
