@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
                 <img
                   src="/branch1.png"
                   alt="Branch logo"
-                  style={{ width: "240px", height: "90px", borderRadius: "8px", objectFit: "contain" }}
+                  style={{ width: "240px", height: "90px", borderRadius: "9px", objectFit: "contain" }}
                 />
               </div>
               <Link href="/contactus" className="branch-subscribe-btn" style={{ padding: "12px 24px", backgroundColor: "#0d9488", color: "#ffffff", borderRadius: "6px", textDecoration: "none", fontWeight: "700", fontSize: "16px", display: "inline-block" }}>
