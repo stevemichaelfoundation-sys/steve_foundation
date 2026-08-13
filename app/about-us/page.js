@@ -5,15 +5,41 @@ import { useParams } from 'next/navigation';
 import "./about-us.css"; 
 
 export default function AboutPage() {
-  // Hook to detect which tab folder path the user is visiting
   const params = useParams();
   const currentTab = params?.tab; 
 
-  const teamMembers = [
+  const our_leadership = [
     {
       name: "Etienne Niyokuri",
-      position: "Founder & CEO",
-      description: ".",
+      position: "Founder",
+      description: "Set the foundation's vision, mission, and long-term strategic direction",
+      imgPlaceholder: "👤",
+    },
+    {
+      name: "",
+      position: "Co-founder",
+      description: "Health care technology and innovation",
+      imgPlaceholder: "👤",
+    },
+    {
+      name: "",
+      position: "Co-founder",
+      description: "Health project Programming",
+      imgPlaceholder: "👤",
+    },
+    {
+      name: "",
+      position: "Senior advisor/ Member",
+      description: "Provide strategic guidance and technical expertise to the foundation",
+      imgPlaceholder: "👤",
+    },
+  ];
+
+  const teamMembers = [
+    {
+      name: "",
+      position: "Executive Director/ Program lead",
+      description: "Provide overall strategic and operational leadership across all Foundation programs (MCH, Mental Health, ASRHR, Child Education  and Developmental skills ",
       imgPlaceholder: "👤",
     },
     {
@@ -60,7 +86,7 @@ export default function AboutPage() {
     },
   ];
 
-  return (
+    return (
     <div className="aboutPageWrapper">
 
       {/* --- ABOUT US TAB CONTENT --- */}
@@ -83,18 +109,42 @@ export default function AboutPage() {
             </div>
           </section>
 
+          {/* --- NEWLY ADDED: OUR LEADERSHIP SECTION --- */}
+          <section className="teamSection leadershipSection">
+            <h2 className="sectionMainHeader">Our Leadership</h2>
+            <p className="sectionSubtitle">The visionary minds steering our core values and direction.</p>
+            
+            <div className="teamGrid leadershipGrid">
+              {our_leadership.map((member, index) => (
+                <div key={`lead-${index}`} className="teamCard leadershipCard">
+                  <div className="imagePlaceholderBox leadershipImagePin">
+                    <span className="avatarSymbol">{member.imgPlaceholder}</span>
+                  </div>
+                  <div className="teamInfoDetails">
+                    <h3 className="memberName">{member.name || "Name TBD"}</h3>
+                    <span className="memberTitlePosition">{member.position}</span>
+                    {member.description && (
+                      <p className="memberShortDescription">{member.description}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* --- GENERAL TEAM SECTION --- */}
           <section className="teamSection">
             <h2 className="sectionMainHeader">Meet Our Team</h2>
             <p className="sectionSubtitle">The dedicated individuals guiding our mission on the ground.</p>
             
             <div className="teamGrid">
               {teamMembers.map((member, index) => (
-                <div key={index} className="teamCard">
+                <div key={`team-${index}`} className="teamCard">
                   <div className="imagePlaceholderBox">
                     <span className="avatarSymbol">{member.imgPlaceholder}</span>
                   </div>
                   <div className="teamInfoDetails">
-                    <h3 className="memberName">{member.name}</h3>
+                    <h3 className="memberName">{member.name || "Name TBD"}</h3>
                     <span className="memberTitlePosition">{member.position}</span>
                     <p className="memberShortDescription">{member.description}</p>
                   </div>
