@@ -31,7 +31,7 @@ export default function ContactPage() {
 
     try {
 
-      const response = await fetch("https://formspree.io/f/xkjowevw", {
+      const response = await fetch("https://formspree.io/f/xyekpvoy", {
         method: "POST",
         headers: { 
           "Accept": "application/json",
