@@ -6,8 +6,9 @@ const root = process.cwd();
 const publicDir = path.join(root, 'public');
 const iconsDir = path.join(publicDir, 'icons');
 
-// Most square, highest-resolution image in public/
-const source = path.join(publicDir, 'anim1.png');
+// Source logo for PWA icons
+const source = path.join(publicDir, 'branch1.png');
+
 const lightBg = '#ffffff';
 
 async function ensureDir(dir) {
