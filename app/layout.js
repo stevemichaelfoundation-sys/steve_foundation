@@ -1,9 +1,26 @@
 import React from "react";
 import Link from "next/link";
+import PwaRegister from "./pwa-register";
 
 export const metadata = {
   title: "Steve Foundation",
   description: "Global Research & Impact Alliance",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Steve Foundation",
+  },
+  icons: {
+    icon: "/icons/icon-192.png",
+    apple: "/apple-touch-icon.png",
+  },
+};
+
+export const viewport = {
+  themeColor: "#001f3f",
+  width: "device-width",
+  initialScale: 1,
 };
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -58,6 +75,7 @@ export default function RootLayout({ children }) {
           <main style={{ minHeight: "60vh" }}>
             {children}
           </main>
+          <PwaRegister />
 
           <footer className="branch-footer" style={{ 
             backgroundColor: "#111827", 
